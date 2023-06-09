@@ -1,0 +1,101 @@
+ DBCSR| Multiplication driver                                               XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Randmat seed                                                    12341313
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              T
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2023-03-25 18:59:57.861
+ ***** ** ***  *** **   PROGRAM STARTED ON        node169.pri.kelvin2.alces.netw
+ **    ****   ******    PROGRAM STARTED BY                              40265864
+ ***** **    ** ** **   PROGRAM PROCESS ID                                 94363
+  **** **  *******  **  PROGRAM STARTED IN /mnt/scratch2/users/40265864/MSc_ML_M
+                                           M/ln_replacements/xyz/Dy_L9_L25_DMF_D
+                                           MF/geometry_optimisation/run-7
+
+ CP2K| version string:                                          CP2K version 4.1
+ CP2K| source code revision number:                                    svn:17462
+ CP2K| cp2kflags: libint fftw3 libxc parallel mpi3 scalapack libxsmm libderiv_ma
+ CP2K|            x_am1=5 libint_max_am=6
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Mon 24 Oct 18:14:20 BST 2022
+ CP2K| Program compiled on                      login1.pri.kelvin2.alces.network
+ CP2K| Program compiled for                                                local
+ CP2K| Data directory path                      /users/40265864/source/cp2k/data
+ CP2K| Input file name                                         geo-opt-relax.inp
+
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                 ../BASIS_MOLOPT_UCL
+ GLOBAL| Potential file name                                        ../POTENTIAL
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                        ../../Dy_L9_L25_DMF_DMF.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                              molecule_name
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                       SL
+ GLOBAL| Run type                                                        GEO_OPT
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| Total number of message passing processes                           121
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name :  AMD EPYC 7702 64-Core Processor
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal           1056282980    1056282980    1056282980    1056282980
+ MEMORY| MemFree            1007723908    1007723908    1007725420    1007723957
+ MEMORY| Buffers                176172        176172        176172        176172
+ MEMORY| Cached               26454492      26454492      26454492      26454492
+ MEMORY| Slab                  5705128       5705128       5705128       5705128
+ MEMORY| SReclaimable          3646048       3646048       3646048       3646048
+ MEMORY| MemLikelyFree      1038000620    1038000620    1038002132    1038000669
+
+
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **     #####                         ##              ##                      **
+ **    ##   ##            ##          ##              ##                      **
+ **   ##     ##                       ##            ######                    **
+ **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
+ **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
+ **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
+ **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
+ **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
+ **           ##                                                    ##        **
+ **                                                                           **
+ **                                                ... make the atoms dance   **
+ **                                                                           **
+ **            Copyright (C) by CP2K developers group (2000 - 2016)           **
+ **                                                                           **
+ *******************************************************************************
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/                LSD: try to use a different multiplicity              *
+ *    |                                                                        *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                   qs_environment.F:1008 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            2 qs_init_subsys
+            1 CP2K
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0

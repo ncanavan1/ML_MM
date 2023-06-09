@@ -1,0 +1,1263 @@
+srun: Job 11227532 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 11227532
+ DBCSR| Multiplication driver                                               XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Randmat seed                                                    12341313
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              T
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2023-02-19 01:10:29.463
+ ***** ** ***  *** **   PROGRAM STARTED ON        node163.pri.kelvin2.alces.netw
+ **    ****   ******    PROGRAM STARTED BY                              40265864
+ ***** **    ** ** **   PROGRAM PROCESS ID                                117866
+  **** **  *******  **  PROGRAM STARTED IN /mnt/scratch2/users/40265864/MSc_ML_M
+                                           M/ln_replacements/xyz/Dy_L18_L20_L20_
+                                           MeO_O/prelim_energy/run-2
+
+ CP2K| version string:                                          CP2K version 4.1
+ CP2K| source code revision number:                                    svn:17462
+ CP2K| cp2kflags: libint fftw3 libxc parallel mpi3 scalapack libxsmm libderiv_ma
+ CP2K|            x_am1=5 libint_max_am=6
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Mon 24 Oct 18:14:20 BST 2022
+ CP2K| Program compiled on                      login1.pri.kelvin2.alces.network
+ CP2K| Program compiled for                                                local
+ CP2K| Data directory path                      /users/40265864/source/cp2k/data
+ CP2K| Input file name                                               geo-opt.inp
+
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                 ../BASIS_MOLOPT_UCL
+ GLOBAL| Potential file name                                        ../POTENTIAL
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                     ../../Dy_L18_L20_L20_MeO_O.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                       Dy_L18_L20_L20_MeO_O
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                       SL
+ GLOBAL| Run type                                                   ENERGY_FORCE
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| Total number of message passing processes                           121
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name :  AMD EPYC 7702 64-Core Processor
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal           1056282980    1056282980    1056282980    1056282980
+ MEMORY| MemFree             781887984     781887984     781888496     781888292
+ MEMORY| Buffers                394700        394700        394700        394700
+ MEMORY| Cached              203332160     203332160     203332160     203332160
+ MEMORY| Slab                 48121172      48121172      48121172      48121172
+ MEMORY| SReclaimable         33253780      33253780      33253780      33253780
+ MEMORY| MemLikelyFree      1018868624    1018868624    1018869136    1018868932
+
+
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **     #####                         ##              ##                      **
+ **    ##   ##            ##          ##              ##                      **
+ **   ##     ##                       ##            ######                    **
+ **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
+ **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
+ **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
+ **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
+ **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
+ **           ##                                                    ##        **
+ **                                                                           **
+ **                                                ... make the atoms dance   **
+ **                                                                           **
+ **            Copyright (C) by CP2K developers group (2000 - 2016)           **
+ **                                                                           **
+ *******************************************************************************
+
+
+ SCF PARAMETERS         Density guess:                                   RESTART
+                        --------------------------------------------------------
+                        max_scf:                                              50
+                        max_scf_history:                                       0
+                        max_diis:                                              4
+                        --------------------------------------------------------
+                        eps_scf:                                        5.00E-07
+                        eps_scf_history:                                0.00E+00
+                        eps_diis:                                       1.00E-01
+                        eps_eigval:                                     1.00E-05
+                        --------------------------------------------------------
+                        level_shift [a.u.]:                                 0.00
+                        --------------------------------------------------------
+                        Outer loop SCF in use 
+                        No variables optimised in outer loop
+                        eps_scf                                         5.00E-07
+                        max_scf                                               20
+                        No outer loop optimization
+                        step_size                                       5.00E-01
+
+ Spin 1
+
+ Number of electrons:                                                         96
+ Number of occupied orbitals:                                                 96
+ Number of molecular orbitals:                                                96
+
+ Spin 2
+
+ Number of electrons:                                                         95
+ Number of occupied orbitals:                                                 95
+ Number of molecular orbitals:                                                95
+
+ Number of orbital functions:                                                532
+ Number of independent orbital functions:                                    532
+
+ Extrapolation method: initial_guess
+
+ *** WARNING in qs_initial_guess.F:262 :: User requested to restart the  ***
+ *** wavefunction from the file named: Dy_L18_L20_L20_MeO_O-RESTART.wfn. ***
+ *** This file does not exist. Please check the existence of the file or ***
+ *** change properly the value of the keyword WFN_RESTART_FILE_NAME.     ***
+ *** Calculation continues using ATOMIC GUESS.                           ***
+
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.20000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.4     0.01601846      -502.9139820712 -5.03E+02
+     2 OT DIIS     0.15E+00    0.4     0.01161203      -506.2304212683 -3.32E+00
+     3 OT DIIS     0.15E+00    0.4     0.00758141      -509.6763014367 -3.45E+00
+     4 OT DIIS     0.15E+00    0.4     0.00599088      -511.3901004373 -1.71E+00
+     5 OT DIIS     0.15E+00    0.4     0.00477779      -512.9611600514 -1.57E+00
+     6 OT DIIS     0.15E+00    0.4     0.00357849      -514.5091285780 -1.55E+00
+     7 OT DIIS     0.15E+00    0.4     0.00299252      -515.2260935881 -7.17E-01
+     8 OT DIIS     0.15E+00    0.4     0.00245536      -515.7641514328 -5.38E-01
+     9 OT DIIS     0.15E+00    0.4     0.00197804      -516.2673481797 -5.03E-01
+    10 OT DIIS     0.15E+00    0.4     0.00173884      -516.5259080259 -2.59E-01
+    11 OT DIIS     0.15E+00    0.4     0.00141308      -516.7948616041 -2.69E-01
+    12 OT DIIS     0.15E+00    6.8     0.00127936      -516.9125996254 -1.18E-01
+    13 OT DIIS     0.15E+00    4.7     0.00108230      -517.0784665794 -1.66E-01
+    14 OT DIIS     0.15E+00    0.4     0.00095598      -517.1940459554 -1.16E-01
+    15 OT DIIS     0.15E+00    0.4     0.00084257      -517.2916893779 -9.76E-02
+    16 OT DIIS     0.15E+00    0.5     0.00074110      -517.3749400106 -8.33E-02
+    17 OT DIIS     0.15E+00    0.4     0.00068879      -517.4263740715 -5.14E-02
+    18 OT DIIS     0.15E+00    0.4     0.00061020      -517.4911589472 -6.48E-02
+    19 OT DIIS     0.15E+00    0.4     0.00056951      -517.5350321622 -4.39E-02
+    20 OT DIIS     0.15E+00    0.4     0.00051718      -517.5850576255 -5.00E-02
+    21 OT DIIS     0.15E+00    0.4     0.00047505      -517.6225451898 -3.75E-02
+    22 OT DIIS     0.15E+00    0.4     0.00043416      -517.6605519509 -3.80E-02
+    23 OT DIIS     0.15E+00    0.4     0.00040993      -517.6857072783 -2.52E-02
+    24 OT DIIS     0.15E+00    0.4     0.00038168      -517.7157658887 -3.01E-02
+    25 OT DIIS     0.15E+00    0.4     0.00036479      -517.7354394724 -1.97E-02
+    26 OT DIIS     0.15E+00    0.4     0.00034587      -517.7569294905 -2.15E-02
+    27 OT DIIS     0.15E+00    0.4     0.00033605      -517.7715331552 -1.46E-02
+    28 OT DIIS     0.15E+00    0.4     0.00032138      -517.7936447521 -2.21E-02
+    29 OT DIIS     0.15E+00    0.4     0.00031563      -517.8029476403 -9.30E-03
+    30 OT DIIS     0.15E+00    0.4     0.00030720      -517.8226473157 -1.97E-02
+    31 OT DIIS     0.15E+00    0.4     0.00030688      -517.8242916385 -1.64E-03
+    32 OT DIIS     0.15E+00    0.4     0.00030548      -517.8284302833 -4.14E-03
+    33 OT DIIS     0.15E+00    0.4     0.00030340      -517.8391450625 -1.07E-02
+    34 OT DIIS     0.15E+00    0.4     0.00030286      -517.8427226570 -3.58E-03
+    35 OT DIIS     0.15E+00    0.4     0.00030254      -517.8497237603 -7.00E-03
+    36 OT DIIS     0.15E+00    0.4     0.00030176      -517.8502569137 -5.33E-04
+    37 OT SD       0.15E+00    0.4     0.00030084      -517.8594843106 -9.23E-03
+    38 OT DIIS     0.15E+00    0.4     0.00030078      -517.8608635617 -1.38E-03
+    39 OT SD       0.15E+00    0.4     0.00030171      -517.8619941016 -1.13E-03
+    40 OT SD       0.15E+00    0.4     0.00030174      -517.8633815028 -1.39E-03
+    41 OT SD       0.15E+00    0.4     0.00030186      -517.8647694354 -1.39E-03
+    42 OT SD       0.15E+00    0.4     0.00030202      -517.8661585814 -1.39E-03
+    43 OT SD       0.15E+00    0.4     0.00030222      -517.8675493402 -1.39E-03
+    44 OT SD       0.15E+00    0.4     0.00030244      -517.8689419911 -1.39E-03
+    45 OT SD       0.15E+00    0.4     0.00030269      -517.8703367470 -1.39E-03
+    46 OT SD       0.15E+00    0.4     0.00030295      -517.8717337803 -1.40E-03
+    47 OT SD       0.15E+00    0.4     0.00030322      -517.8731332368 -1.40E-03
+    48 OT SD       0.15E+00    0.4     0.00030350      -517.8745352434 -1.40E-03
+    49 OT SD       0.15E+00    0.4     0.00030380      -517.8759399132 -1.40E-03
+    50 OT SD       0.15E+00    0.4     0.00030411      -517.8773473486 -1.41E-03
+
+  Leaving inner SCF loop after reaching    50 steps.
+
+
+  Electronic density on regular grids:       -190.9999999926        0.0000000074
+  Core density on regular grids:              193.9999999906       -0.0000000094
+  Total charge density on r-space grids:        2.9999999980
+  Total charge density g-space grids:           2.9999999980
+
+  Overlap energy of the core charge distribution:               0.00000576685054
+  Self energy of the core charge distribution:              -1180.77596130715415
+  Core Hamiltonian energy:                                    346.82561316803424
+  Hartree energy:                                             419.56830591024828
+  Exchange-correlation energy:                               -103.49531088661317
+
+  Total energy:                                              -517.87734734863432
+
+  outer SCF iter =    1 RMS gradient =   0.30E-03 energy =       -517.8773473486
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.20000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.7     0.00036430      -517.8787576433 -1.41E-03
+     2 OT DIIS     0.15E+00    0.3     0.00034306      -517.8807166409 -1.96E-03
+     3 OT DIIS     0.15E+00    0.3     0.00029472      -517.8884854566 -7.77E-03
+     4 OT DIIS     0.15E+00    0.3     0.00028052      -517.8945334138 -6.05E-03
+     5 OT DIIS     0.15E+00    0.4     0.00027201      -517.9011370353 -6.60E-03
+     6 OT DIIS     0.15E+00    0.4     0.00026721      -517.9079283535 -6.79E-03
+     7 OT DIIS     0.15E+00    0.4     0.00026386      -517.9155664541 -7.64E-03
+     8 OT DIIS     0.15E+00    0.4     0.00026218      -517.9221395128 -6.57E-03
+     9 OT DIIS     0.15E+00    0.4     0.00026118      -517.9287657185 -6.63E-03
+    10 OT DIIS     0.15E+00    0.4     0.00026086      -517.9334008814 -4.64E-03
+    11 OT SD       0.15E+00    0.4     0.00026088      -517.9358876202 -2.49E-03
+    12 OT SD       0.15E+00    0.4     0.00026092      -517.9369250140 -1.04E-03
+    13 OT SD       0.15E+00    0.4     0.00026098      -517.9379627750 -1.04E-03
+    14 OT SD       0.15E+00    0.4     0.00026104      -517.9390009957 -1.04E-03
+    15 OT SD       0.15E+00    0.4     0.00026111      -517.9400397477 -1.04E-03
+    16 OT SD       0.15E+00    0.4     0.00026119      -517.9410790928 -1.04E-03
+    17 OT SD       0.15E+00    0.4     0.00026128      -517.9421190869 -1.04E-03
+    18 OT SD       0.15E+00    0.4     0.00026137      -517.9431597819 -1.04E-03
+    19 OT SD       0.15E+00    0.4     0.00026147      -517.9442012265 -1.04E-03
+    20 OT SD       0.15E+00    0.4     0.00026158      -517.9452434672 -1.04E-03
+    21 OT SD       0.15E+00    0.4     0.00026168      -517.9462865485 -1.04E-03
+    22 OT SD       0.15E+00    0.4     0.00026180      -517.9473305133 -1.04E-03
+    23 OT SD       0.15E+00    0.4     0.00026192      -517.9483754032 -1.04E-03
+    24 OT SD       0.15E+00    0.4     0.00026204      -517.9494212586 -1.05E-03
+    25 OT SD       0.15E+00    0.4     0.00026217      -517.9504681189 -1.05E-03
+    26 OT SD       0.15E+00    0.4     0.00026231      -517.9515160224 -1.05E-03
+    27 OT SD       0.15E+00    0.4     0.00026245      -517.9525650067 -1.05E-03
+    28 OT SD       0.15E+00    0.4     0.00026259      -517.9536151086 -1.05E-03
+    29 OT SD       0.15E+00    0.4     0.00026274      -517.9546663642 -1.05E-03
+    30 OT SD       0.15E+00    0.4     0.00026289      -517.9557188088 -1.05E-03
+    31 OT SD       0.15E+00    0.4     0.00026304      -517.9567724773 -1.05E-03
+    32 OT SD       0.15E+00    0.4     0.00026320      -517.9578274037 -1.05E-03
+    33 OT SD       0.15E+00    0.4     0.00026337      -517.9588836216 -1.06E-03
+    34 OT SD       0.15E+00    0.4     0.00026354      -517.9599411641 -1.06E-03
+    35 OT SD       0.15E+00    0.4     0.00026371      -517.9610000637 -1.06E-03
+    36 OT SD       0.15E+00    0.4     0.00026388      -517.9620603524 -1.06E-03
+    37 OT SD       0.15E+00    0.4     0.00026406      -517.9631220617 -1.06E-03
+    38 OT SD       0.15E+00    0.4     0.00026425      -517.9641852227 -1.06E-03
+    39 OT SD       0.15E+00    0.4     0.00026443      -517.9652498660 -1.06E-03
+    40 OT SD       0.15E+00    0.4     0.00026462      -517.9663160217 -1.07E-03
+    41 OT SD       0.15E+00    0.4     0.00026482      -517.9673837195 -1.07E-03
+    42 OT SD       0.15E+00    0.4     0.00026501      -517.9684529887 -1.07E-03
+    43 OT SD       0.15E+00    0.4     0.00026521      -517.9695238583 -1.07E-03
+    44 OT SD       0.15E+00    0.4     0.00026542      -517.9705963566 -1.07E-03
+    45 OT SD       0.15E+00    0.4     0.00026563      -517.9716705118 -1.07E-03
+    46 OT SD       0.15E+00    0.4     0.00026584      -517.9727463516 -1.08E-03
+    47 OT DIIS     0.15E+00    0.4     0.00026605      -517.9738239031 -1.08E-03
+    48 OT SD       0.15E+00    0.4     0.00038206      -517.9772631798 -3.44E-03
+    49 OT SD       0.15E+00    0.4     0.00035205      -517.9793838573 -2.12E-03
+    50 OT SD       0.15E+00    0.4     0.00033898      -517.9812317430 -1.85E-03
+
+  Leaving inner SCF loop after reaching    50 steps.
+
+
+  Electronic density on regular grids:       -190.9999997851        0.0000002149
+  Core density on regular grids:              193.9999999906       -0.0000000094
+  Total charge density on r-space grids:        3.0000002056
+  Total charge density g-space grids:           3.0000002056
+
+  Overlap energy of the core charge distribution:               0.00000576685054
+  Self energy of the core charge distribution:              -1180.77596130715415
+  Core Hamiltonian energy:                                    346.95248387349091
+  Hartree energy:                                             419.43238205314822
+  Exchange-correlation energy:                               -103.59014212929790
+
+  Total energy:                                              -517.98123174296234
+
+  outer SCF iter =    2 RMS gradient =   0.34E-03 energy =       -517.9812317430
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.20000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.7     0.00033558      -517.9829637609 -1.73E-03
+     2 OT DIIS     0.15E+00    0.3     0.00033126      -517.9846680725 -1.70E-03
+     3 OT DIIS     0.15E+00    0.3     0.00032322      -517.9925166102 -7.85E-03
+     4 OT SD       0.15E+00    0.3     0.00032288      -517.9973352496 -4.82E-03
+     5 OT SD       0.15E+00    0.3     0.00032294      -517.9989243384 -1.59E-03
+     6 OT SD       0.15E+00    0.3     0.00032303      -518.0005141304 -1.59E-03
+     7 OT SD       0.15E+00    0.3     0.00032314      -518.0021048720 -1.59E-03
+     8 OT SD       0.15E+00    0.3     0.00032327      -518.0036967354 -1.59E-03
+     9 OT SD       0.15E+00    0.3     0.00032340      -518.0052898511 -1.59E-03
+    10 OT SD       0.15E+00    0.3     0.00032355      -518.0068843215 -1.59E-03
+    11 OT SD       0.15E+00    0.4     0.00032370      -518.0084802272 -1.60E-03
+    12 OT DIIS     0.15E+00    0.3     0.00032385      -518.0100776322 -1.60E-03
+    13 OT SD       0.15E+00    0.3     0.00036701      -518.0220580907 -1.20E-02
+    14 OT SD       0.15E+00    0.4     0.00035518      -518.0240700863 -2.01E-03
+    15 OT SD       0.15E+00    0.4     0.00035051      -518.0259777215 -1.91E-03
+    16 OT SD       0.15E+00    0.4     0.00034821      -518.0278432091 -1.87E-03
+    17 OT SD       0.15E+00    0.4     0.00034685      -518.0296872824 -1.84E-03
+    18 OT SD       0.15E+00    0.4     0.00034592      -518.0315182636 -1.83E-03
+    19 OT DIIS     0.15E+00    0.4     0.00034522      -518.0333401390 -1.82E-03
+    20 OT DIIS     0.15E+00    0.4     0.00034020      -518.0694595727 -3.61E-02
+    21 OT SD       0.15E+00    0.4     0.00035220      -518.1130542738 -4.36E-02
+    22 OT SD       0.15E+00    0.4     0.00034310      -518.1149143647 -1.86E-03
+    23 OT DIIS     0.15E+00    0.4     0.00033963      -518.1166977164 -1.78E-03
+    24 OT SD       0.15E+00    0.4     0.00033823      -518.1313043474 -1.46E-02
+    25 OT DIIS     0.15E+00    0.4     0.00033688      -518.1330440659 -1.74E-03
+    26 OT DIIS     0.15E+00    0.4     0.00033707      -518.1442950504 -1.13E-02
+    27 OT DIIS     0.15E+00    0.4     0.00032717      -518.1539981211 -9.70E-03
+    28 OT DIIS     0.15E+00    0.4     0.00030081      -518.2254884069 -7.15E-02
+    29 OT DIIS     0.15E+00    0.4     0.00029330      -518.2397244639 -1.42E-02
+    30 OT DIIS     0.15E+00    0.4     0.00028059      -518.2538213988 -1.41E-02
+    31 OT SD       0.15E+00    0.4     0.00028619      -518.2699526696 -1.61E-02
+    32 OT DIIS     0.15E+00    0.4     0.00027440      -518.2711709319 -1.22E-03
+    33 OT DIIS     0.15E+00    0.4     0.00027455      -518.2809211814 -9.75E-03
+    34 OT DIIS     0.15E+00    0.4     0.00026820      -518.2913247848 -1.04E-02
+    35 OT DIIS     0.15E+00    0.4     0.00023662      -518.3118673156 -2.05E-02
+    36 OT DIIS     0.15E+00    0.4     0.00021860      -518.3285033797 -1.66E-02
+    37 OT DIIS     0.15E+00    0.4     0.00019879      -518.3445253903 -1.60E-02
+    38 OT DIIS     0.15E+00    0.4     0.00015453      -518.3659755747 -2.15E-02
+    39 OT DIIS     0.15E+00    0.4     0.00014745      -518.3688732052 -2.90E-03
+    40 OT DIIS     0.15E+00    0.4     0.00013949      -518.3706217261 -1.75E-03
+    41 OT DIIS     0.15E+00    0.4     0.00013401      -518.3732424107 -2.62E-03
+    42 OT DIIS     0.15E+00    0.4     0.00012536      -518.3782144760 -4.97E-03
+    43 OT DIIS     0.15E+00    0.4     0.00011620      -518.3828290149 -4.61E-03
+    44 OT DIIS     0.15E+00    0.4     0.00011000      -518.3862250911 -3.40E-03
+    45 OT DIIS     0.15E+00    0.4     0.00010719      -518.3877581502 -1.53E-03
+    46 OT DIIS     0.15E+00    0.4     0.00010481      -518.3889869872 -1.23E-03
+    47 OT DIIS     0.15E+00    0.4     0.00009872      -518.3924915562 -3.50E-03
+    48 OT DIIS     0.15E+00    0.4     0.00009553      -518.3933999029 -9.08E-04
+    49 OT DIIS     0.15E+00    0.4     0.00009021      -518.3966113895 -3.21E-03
+    50 OT DIIS     0.15E+00    0.4     0.00008794      -518.3974060851 -7.95E-04
+
+  Leaving inner SCF loop after reaching    50 steps.
+
+
+  Electronic density on regular grids:       -190.9999999877        0.0000000123
+  Core density on regular grids:              193.9999999906       -0.0000000094
+  Total charge density on r-space grids:        3.0000000029
+  Total charge density g-space grids:           3.0000000029
+
+  Overlap energy of the core charge distribution:               0.00000576685054
+  Self energy of the core charge distribution:              -1180.77596130715415
+  Core Hamiltonian energy:                                    346.83919755637152
+  Hartree energy:                                             419.53315735483733
+  Exchange-correlation energy:                               -103.99380545604075
+
+  Total energy:                                              -518.39740608513534
+
+  outer SCF iter =    3 RMS gradient =   0.88E-04 energy =       -518.3974060851
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.20000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.7     0.00014135      -518.4002317754 -2.83E-03
+     2 OT DIIS     0.15E+00    0.3     0.00013371      -518.4005274337 -2.96E-04
+     3 OT DIIS     0.15E+00    0.3     0.00011587      -518.4017874077 -1.26E-03
+     4 OT DIIS     0.15E+00    0.3     0.00011113      -518.4028284279 -1.04E-03
+     5 OT DIIS     0.15E+00    0.3     0.00010638      -518.4045746415 -1.75E-03
+     6 OT DIIS     0.15E+00    0.3     0.00010327      -518.4060017031 -1.43E-03
+     7 OT DIIS     0.15E+00    0.3     0.00009926      -518.4081452949 -2.14E-03
+     8 OT DIIS     0.15E+00    0.4     0.00009455      -518.4108281011 -2.68E-03
+     9 OT DIIS     0.15E+00    0.4     0.00008998      -518.4134646376 -2.64E-03
+    10 OT DIIS     0.15E+00    0.4     0.00008684      -518.4153987768 -1.93E-03
+    11 OT DIIS     0.15E+00    0.4     0.00008327      -518.4174445963 -2.05E-03
+    12 OT DIIS     0.15E+00    0.4     0.00008016      -518.4192353213 -1.79E-03
+    13 OT DIIS     0.15E+00    0.4     0.00007539      -518.4217394494 -2.50E-03
+    14 OT DIIS     0.15E+00    0.4     0.00007083      -518.4240478153 -2.31E-03
+    15 OT DIIS     0.15E+00    0.4     0.00006659      -518.4258908693 -1.84E-03
+    16 OT DIIS     0.15E+00    0.4     0.00006206      -518.4276963340 -1.81E-03
+    17 OT DIIS     0.15E+00    0.4     0.00005898      -518.4288114862 -1.12E-03
+    18 OT DIIS     0.15E+00    0.4     0.00005614      -518.4297182598 -9.07E-04
+    19 OT DIIS     0.15E+00    0.4     0.00005257      -518.4306665394 -9.48E-04
+    20 OT DIIS     0.15E+00    0.4     0.00004964      -518.4314413272 -7.75E-04
+    21 OT DIIS     0.15E+00    0.4     0.00004691      -518.4321314957 -6.90E-04
+    22 OT DIIS     0.15E+00    0.4     0.00004370      -518.4327320147 -6.01E-04
+    23 OT DIIS     0.15E+00    0.4     0.00004070      -518.4332812578 -5.49E-04
+    24 OT DIIS     0.15E+00    0.4     0.00003821      -518.4337296820 -4.48E-04
+    25 OT DIIS     0.15E+00    0.4     0.00003661      -518.4340703788 -3.41E-04
+    26 OT DIIS     0.15E+00    0.4     0.00003557      -518.4342660511 -1.96E-04
+    27 OT DIIS     0.15E+00    0.4     0.00003407      -518.4345907200 -3.25E-04
+    28 OT DIIS     0.15E+00    0.4     0.00003310      -518.4348435321 -2.53E-04
+    29 OT DIIS     0.15E+00    0.4     0.00003231      -518.4350887936 -2.45E-04
+    30 OT DIIS     0.15E+00    0.4     0.00003149      -518.4353709199 -2.82E-04
+    31 OT DIIS     0.15E+00    0.4     0.00003058      -518.4356971118 -3.26E-04
+    32 OT DIIS     0.15E+00    0.4     0.00002970      -518.4360273373 -3.30E-04
+    33 OT DIIS     0.15E+00    0.4     0.00002896      -518.4363164822 -2.89E-04
+    34 OT DIIS     0.15E+00    0.4     0.00002804      -518.4366425864 -3.26E-04
+    35 OT DIIS     0.15E+00    0.4     0.00002721      -518.4369500644 -3.07E-04
+    36 OT DIIS     0.15E+00    0.4     0.00002622      -518.4372835098 -3.33E-04
+    37 OT DIIS     0.15E+00    0.4     0.00002533      -518.4375765318 -2.93E-04
+    38 OT DIIS     0.15E+00    6.1     0.00002449      -518.4378345069 -2.58E-04
+    39 OT DIIS     0.15E+00    7.1     0.00002360      -518.4381093200 -2.75E-04
+    40 OT DIIS     0.15E+00    7.1     0.00002289      -518.4383282118 -2.19E-04
+    41 OT DIIS     0.15E+00    7.1     0.00002221      -518.4385239160 -1.96E-04
+    42 OT DIIS     0.15E+00    7.1     0.00002146      -518.4387421285 -2.18E-04
+    43 OT DIIS     0.15E+00    7.1     0.00002083      -518.4389133664 -1.71E-04
+    44 OT DIIS     0.15E+00    7.1     0.00001991      -518.4391423776 -2.29E-04
+    45 OT DIIS     0.15E+00    7.0     0.00001913      -518.4393308389 -1.88E-04
+    46 OT DIIS     0.15E+00    7.1     0.00001843      -518.4394836620 -1.53E-04
+    47 OT DIIS     0.15E+00    7.1     0.00001777      -518.4396315982 -1.48E-04
+    48 OT DIIS     0.15E+00    7.0     0.00001726      -518.4397315553 -1.00E-04
+    49 OT DIIS     0.15E+00    7.1     0.00001661      -518.4398508778 -1.19E-04
+    50 OT DIIS     0.15E+00    7.1     0.00001608      -518.4399484316 -9.76E-05
+
+  Leaving inner SCF loop after reaching    50 steps.
+
+
+  Electronic density on regular grids:       -190.9999999926        0.0000000074
+  Core density on regular grids:              193.9999999906       -0.0000000094
+  Total charge density on r-space grids:        2.9999999980
+  Total charge density g-space grids:           2.9999999980
+
+  Overlap energy of the core charge distribution:               0.00000576685054
+  Self energy of the core charge distribution:              -1180.77596130715415
+  Core Hamiltonian energy:                                    346.76162568726897
+  Hartree energy:                                             419.60933918846206
+  Exchange-correlation energy:                               -104.03495776699108
+
+  Total energy:                                              -518.43994843156361
+
+  outer SCF iter =    4 RMS gradient =   0.16E-04 energy =       -518.4399484316
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.20000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00   13.5     0.00001831      -518.4400394005 -9.10E-05
+     2 OT DIIS     0.15E+00    4.7     0.00001785      -518.4400444421 -5.04E-06
+     3 OT DIIS     0.15E+00    5.3     0.00001645      -518.4400732248 -2.88E-05
+     4 OT DIIS     0.15E+00    5.8     0.00001606      -518.4400913781 -1.82E-05
+     5 OT DIIS     0.15E+00    5.8     0.00001542      -518.4401303837 -3.90E-05
+     6 OT DIIS     0.15E+00    5.8     0.00001475      -518.4401886096 -5.82E-05
+     7 OT DIIS     0.15E+00    5.8     0.00001378      -518.4402670410 -7.84E-05
+     8 OT DIIS     0.15E+00    5.8     0.00001296      -518.4403444402 -7.74E-05
+     9 OT DIIS     0.15E+00    4.7     0.00001251      -518.4403895776 -4.51E-05
+    10 OT DIIS     0.15E+00    0.3     0.00001191      -518.4404489878 -5.94E-05
+    11 OT DIIS     0.15E+00    0.3     0.00001157      -518.4404864605 -3.75E-05
+    12 OT DIIS     0.15E+00    0.3     0.00001129      -518.4405198984 -3.34E-05
+    13 OT DIIS     0.15E+00    0.3     0.00001095      -518.4405607927 -4.09E-05
+    14 OT DIIS     0.15E+00    0.3     0.00001068      -518.4405999676 -3.92E-05
+    15 OT DIIS     0.15E+00    0.3     0.00001043      -518.4406408368 -4.09E-05
+    16 OT DIIS     0.15E+00    0.3     0.00001020      -518.4406841724 -4.33E-05
+    17 OT DIIS     0.15E+00    0.3     0.00001005      -518.4407196921 -3.55E-05
+    18 OT DIIS     0.15E+00    0.3     0.00000995      -518.4407470621 -2.74E-05
+    19 OT DIIS     0.15E+00    0.3     0.00000986      -518.4407745025 -2.74E-05
+    20 OT DIIS     0.15E+00    0.3     0.00000978      -518.4407991328 -2.46E-05
+    21 OT DIIS     0.15E+00    0.3     0.00000969      -518.4408282648 -2.91E-05
+    22 OT DIIS     0.15E+00    0.3     0.00000958      -518.4408634057 -3.51E-05
+    23 OT DIIS     0.15E+00    0.3     0.00000946      -518.4409018576 -3.85E-05
+    24 OT DIIS     0.15E+00    0.4     0.00000935      -518.4409434764 -4.16E-05
+    25 OT DIIS     0.15E+00    0.3     0.00000924      -518.4409837865 -4.03E-05
+    26 OT DIIS     0.15E+00    0.3     0.00000917      -518.4410174884 -3.37E-05
+    27 OT DIIS     0.15E+00    0.4     0.00000909      -518.4410559743 -3.85E-05
+    28 OT DIIS     0.15E+00    0.3     0.00000902      -518.4410942990 -3.83E-05
+    29 OT DIIS     0.15E+00    0.3     0.00000894      -518.4411383359 -4.40E-05
+    30 OT DIIS     0.15E+00    0.3     0.00000886      -518.4411898530 -5.15E-05
+    31 OT DIIS     0.15E+00    0.4     0.00000879      -518.4412383950 -4.85E-05
+    32 OT DIIS     0.15E+00    0.4     0.00000874      -518.4412801687 -4.18E-05
+    33 OT DIIS     0.15E+00    0.4     0.00000869      -518.4413167167 -3.65E-05
+    34 OT DIIS     0.15E+00    0.4     0.00000865      -518.4413479130 -3.12E-05
+    35 OT DIIS     0.15E+00    0.4     0.00000861      -518.4413794492 -3.15E-05
+    36 OT DIIS     0.15E+00    0.4     0.00000856      -518.4414131925 -3.37E-05
+    37 OT DIIS     0.15E+00    0.4     0.00000852      -518.4414474214 -3.42E-05
+    38 OT DIIS     0.15E+00    0.4     0.00000848      -518.4414819345 -3.45E-05
+    39 OT DIIS     0.15E+00    0.4     0.00000844      -518.4415152547 -3.33E-05
+    40 OT DIIS     0.15E+00    0.4     0.00000841      -518.4415443950 -2.91E-05
+    41 OT DIIS     0.15E+00    0.4     0.00000838      -518.4415690289 -2.46E-05
+    42 OT DIIS     0.15E+00    0.4     0.00000836      -518.4415929933 -2.40E-05
+    43 OT DIIS     0.15E+00    0.4     0.00000834      -518.4416191281 -2.61E-05
+    44 OT DIIS     0.15E+00    0.4     0.00000830      -518.4416527178 -3.36E-05
+    45 OT DIIS     0.15E+00    0.4     0.00000825      -518.4416957028 -4.30E-05
+    46 OT DIIS     0.15E+00    0.4     0.00000820      -518.4417456488 -4.99E-05
+    47 OT DIIS     0.15E+00    0.4     0.00000813      -518.4417969285 -5.13E-05
+    48 OT DIIS     0.15E+00    0.4     0.00000807      -518.4418476671 -5.07E-05
+    49 OT DIIS     0.15E+00    0.4     0.00000800      -518.4418966218 -4.90E-05
+    50 OT DIIS     0.15E+00    0.4     0.00000793      -518.4419437290 -4.71E-05
+
+  Leaving inner SCF loop after reaching    50 steps.
+
+
+  Electronic density on regular grids:       -190.9999999926        0.0000000074
+  Core density on regular grids:              193.9999999906       -0.0000000094
+  Total charge density on r-space grids:        2.9999999980
+  Total charge density g-space grids:           2.9999999980
+
+  Overlap energy of the core charge distribution:               0.00000576685054
+  Self energy of the core charge distribution:              -1180.77596130715415
+  Core Hamiltonian energy:                                    346.75671589205052
+  Hartree energy:                                             419.61155001094880
+  Exchange-correlation energy:                               -104.03425409166803
+
+  Total energy:                                              -518.44194372897232
+
+  outer SCF iter =    5 RMS gradient =   0.79E-05 energy =       -518.4419437290
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.20000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.7     0.00000789      -518.4419993029 -5.56E-05
+     2 OT DIIS     0.15E+00    0.3     0.00000787      -518.4420002503 -9.47E-07
+     3 OT DIIS     0.15E+00    0.3     0.00000782      -518.4420053791 -5.13E-06
+     4 OT DIIS     0.15E+00    0.3     0.00000780      -518.4420101581 -4.78E-06
+     5 OT DIIS     0.15E+00    0.3     0.00000779      -518.4420153311 -5.17E-06
+     6 OT DIIS     0.15E+00    0.3     0.00000774      -518.4420374942 -2.22E-05
+     7 OT DIIS     0.15E+00    0.3     0.00000771      -518.4420624122 -2.49E-05
+     8 OT DIIS     0.15E+00    0.3     0.00000763      -518.4421141449 -5.17E-05
+     9 OT DIIS     0.15E+00    0.3     0.00000760      -518.4421399528 -2.58E-05
+    10 OT DIIS     0.15E+00    0.3     0.00000756      -518.4421819179 -4.20E-05
+    11 OT DIIS     0.15E+00    0.3     0.00000753      -518.4422085160 -2.66E-05
+    12 OT DIIS     0.15E+00    0.3     0.00000751      -518.4422326472 -2.41E-05
+    13 OT DIIS     0.15E+00    0.3     0.00000749      -518.4422547585 -2.21E-05
+    14 OT DIIS     0.15E+00    0.3     0.00000747      -518.4422816447 -2.69E-05
+    15 OT DIIS     0.15E+00    0.3     0.00000745      -518.4423115763 -2.99E-05
+    16 OT DIIS     0.15E+00    0.3     0.00000743      -518.4423381018 -2.65E-05
+    17 OT DIIS     0.15E+00    0.3     0.00000741      -518.4423773560 -3.93E-05
+    18 OT DIIS     0.15E+00    0.3     0.00000741      -518.4423999270 -2.26E-05
+    19 OT DIIS     0.15E+00    0.3     0.00000740      -518.4424157485 -1.58E-05
+    20 OT DIIS     0.15E+00    0.3     0.00000740      -518.4424290283 -1.33E-05
+    21 OT DIIS     0.15E+00    0.3     0.00000740      -518.4424335382 -4.51E-06
+    22 OT DIIS     0.15E+00    0.3     0.00000740      -518.4424386486 -5.11E-06
+    23 OT DIIS     0.15E+00    0.3     0.00000740      -518.4424406765 -2.03E-06
+    24 OT DIIS     0.15E+00    0.3     0.00000740      -518.4424411371 -4.61E-07
+    25 OT SD       0.15E+00    0.3     0.00000739      -518.4424411523 -1.52E-08
+    26 OT SD       0.15E+00    0.3     0.00000739      -518.4424419856 -8.33E-07
+    27 OT SD       0.15E+00    0.3     0.00000739      -518.4424428189 -8.33E-07
+    28 OT SD       0.15E+00    0.3     0.00000739      -518.4424436522 -8.33E-07
+    29 OT SD       0.15E+00    0.3     0.00000739      -518.4424444855 -8.33E-07
+    30 OT SD       0.15E+00    0.3     0.00000739      -518.4424453188 -8.33E-07
+    31 OT SD       0.15E+00    0.3     0.00000739      -518.4424461522 -8.33E-07
+    32 OT SD       0.15E+00    0.3     0.00000739      -518.4424469855 -8.33E-07
+    33 OT SD       0.15E+00    0.3     0.00000739      -518.4424478190 -8.33E-07
+    34 OT SD       0.15E+00    0.3     0.00000739      -518.4424486524 -8.33E-07
+    35 OT SD       0.15E+00    0.3     0.00000740      -518.4424494859 -8.34E-07
+    36 OT SD       0.15E+00    0.3     0.00000740      -518.4424503195 -8.34E-07
+    37 OT SD       0.15E+00    0.3     0.00000740      -518.4424511531 -8.34E-07
+    38 OT SD       0.15E+00    0.3     0.00000740      -518.4424519867 -8.34E-07
+    39 OT SD       0.15E+00    0.3     0.00000740      -518.4424528204 -8.34E-07
+    40 OT SD       0.15E+00    0.3     0.00000740      -518.4424536541 -8.34E-07
+    41 OT SD       0.15E+00    0.3     0.00000740      -518.4424544879 -8.34E-07
+    42 OT SD       0.15E+00    0.3     0.00000740      -518.4424553218 -8.34E-07
+    43 OT SD       0.15E+00    0.3     0.00000740      -518.4424561557 -8.34E-07
+    44 OT SD       0.15E+00    0.3     0.00000740      -518.4424569896 -8.34E-07
+    45 OT SD       0.15E+00    0.3     0.00000740      -518.4424578236 -8.34E-07
+    46 OT SD       0.15E+00    0.3     0.00000740      -518.4424586577 -8.34E-07
+    47 OT SD       0.15E+00    0.3     0.00000740      -518.4424594918 -8.34E-07
+    48 OT SD       0.15E+00    0.3     0.00000740      -518.4424603260 -8.34E-07
+    49 OT SD       0.15E+00    0.3     0.00000740      -518.4424611603 -8.34E-07
+    50 OT SD       0.15E+00    0.3     0.00000740      -518.4424619946 -8.34E-07
+
+  Leaving inner SCF loop after reaching    50 steps.
+
+
+  Electronic density on regular grids:       -190.9999999926        0.0000000074
+  Core density on regular grids:              193.9999999906       -0.0000000094
+  Total charge density on r-space grids:        2.9999999980
+  Total charge density g-space grids:           2.9999999980
+
+  Overlap energy of the core charge distribution:               0.00000576685054
+  Self energy of the core charge distribution:              -1180.77596130715415
+  Core Hamiltonian energy:                                    346.76105111470838
+  Hartree energy:                                             419.60723203130732
+  Exchange-correlation energy:                               -104.03478960028903
+
+  Total energy:                                              -518.44246199457689
+
+  outer SCF iter =    6 RMS gradient =   0.74E-05 energy =       -518.4424619946
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.20000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.7     0.00000740      -518.4424628290 -8.34E-07
+     2 OT DIIS     0.15E+00    0.3     0.00000740      -518.4424636627 -8.34E-07
+     3 OT SD       0.15E+00    0.3     0.00000740      -518.4424651461 -1.48E-06
+     4 OT SD       0.15E+00    0.3     0.00000740      -518.4424659798 -8.34E-07
+     5 OT SD       0.15E+00    0.3     0.00000740      -518.4424668135 -8.34E-07
+     6 OT SD       0.15E+00    0.3     0.00000740      -518.4424676473 -8.34E-07
+     7 OT SD       0.15E+00    0.3     0.00000740      -518.4424684812 -8.34E-07
+     8 OT SD       0.15E+00    0.3     0.00000740      -518.4424693151 -8.34E-07
+     9 OT SD       0.15E+00    0.3     0.00000740      -518.4424701490 -8.34E-07
+    10 OT SD       0.15E+00    0.3     0.00000740      -518.4424709830 -8.34E-07
+    11 OT SD       0.15E+00    0.3     0.00000740      -518.4424718171 -8.34E-07
+    12 OT SD       0.15E+00    0.3     0.00000740      -518.4424726513 -8.34E-07
+    13 OT DIIS     0.15E+00    0.3     0.00000740      -518.4424734855 -8.34E-07
+    14 OT SD       0.15E+00    0.3     0.00004065      -518.4445297514 -2.06E-03
+    15 OT SD       0.15E+00    0.3     0.00002980      -518.4445513276 -2.16E-05
+    16 OT SD       0.15E+00    0.3     0.00002398      -518.4445634391 -1.21E-05
+    17 OT SD       0.15E+00    0.3     0.00002054      -518.4445715311 -8.09E-06
+    18 OT SD       0.15E+00    0.3     0.00001830      -518.4445775906 -6.06E-06
+    19 OT SD       0.15E+00    0.3     0.00001672      -518.4445824633 -4.87E-06
+    20 OT DIIS     0.15E+00    0.3     0.00001553      -518.4445865657 -4.10E-06
+    21 OT DIIS     0.15E+00    0.3     0.00000912      -518.4446339809 -4.74E-05
+    22 OT DIIS     0.15E+00    0.3     0.00000876      -518.4446424824 -8.50E-06
+    23 OT DIIS     0.15E+00    0.3     0.00000850      -518.4446511664 -8.68E-06
+    24 OT DIIS     0.15E+00    0.3     0.00000833      -518.4446589390 -7.77E-06
+    25 OT DIIS     0.15E+00    0.4     0.00000820      -518.4446678351 -8.90E-06
+    26 OT DIIS     0.15E+00    0.4     0.00000810      -518.4446770084 -9.17E-06
+    27 OT DIIS     0.15E+00    0.3     0.00000802      -518.4446868051 -9.80E-06
+    28 OT DIIS     0.15E+00    0.3     0.00000795      -518.4446991861 -1.24E-05
+    29 OT DIIS     0.15E+00    0.3     0.00000792      -518.4447079109 -8.72E-06
+    30 OT DIIS     0.15E+00    0.3     0.00000786      -518.4447219835 -1.41E-05
+    31 OT DIIS     0.15E+00    0.3     0.00000781      -518.4447377830 -1.58E-05
+    32 OT DIIS     0.15E+00    0.3     0.00000777      -518.4447524539 -1.47E-05
+    33 OT DIIS     0.15E+00    0.3     0.00000773      -518.4447707322 -1.83E-05
+    34 OT DIIS     0.15E+00    0.3     0.00000768      -518.4447932372 -2.25E-05
+    35 OT DIIS     0.15E+00    0.3     0.00000762      -518.4448181974 -2.50E-05
+    36 OT DIIS     0.15E+00    0.3     0.00000755      -518.4448522796 -3.41E-05
+    37 OT DIIS     0.15E+00    0.3     0.00000749      -518.4448857111 -3.34E-05
+    38 OT DIIS     0.15E+00    0.3     0.00000738      -518.4449369761 -5.13E-05
+    39 OT DIIS     0.15E+00    0.3     0.00000728      -518.4449912626 -5.43E-05
+    40 OT DIIS     0.15E+00    0.3     0.00000718      -518.4450428008 -5.15E-05
+    41 OT DIIS     0.15E+00    0.3     0.00000709      -518.4450901354 -4.73E-05
+    42 OT DIIS     0.15E+00    0.3     0.00000697      -518.4451441084 -5.40E-05
+    43 OT DIIS     0.15E+00    0.3     0.00000686      -518.4451940451 -4.99E-05
+    44 OT DIIS     0.15E+00    0.3     0.00000675      -518.4452418680 -4.78E-05
+    45 OT DIIS     0.15E+00    0.3     0.00000663      -518.4452870463 -4.52E-05
+    46 OT DIIS     0.15E+00    0.3     0.00000649      -518.4453392197 -5.22E-05
+    47 OT DIIS     0.15E+00    0.4     0.00000637      -518.4453858544 -4.66E-05
+    48 OT DIIS     0.15E+00    0.3     0.00000624      -518.4454309605 -4.51E-05
+    49 OT DIIS     0.15E+00    0.3     0.00000613      -518.4454680768 -3.71E-05
+    50 OT DIIS     0.15E+00    0.3     0.00000600      -518.4455094200 -4.13E-05
+
+  Leaving inner SCF loop after reaching    50 steps.
+
+
+  Electronic density on regular grids:       -191.0000006574       -0.0000006574
+  Core density on regular grids:              193.9999999906       -0.0000000094
+  Total charge density on r-space grids:        2.9999993333
+  Total charge density g-space grids:           2.9999993333
+
+  Overlap energy of the core charge distribution:               0.00000576685054
+  Self energy of the core charge distribution:              -1180.77596130715415
+  Core Hamiltonian energy:                                    346.78485012732722
+  Hartree energy:                                             419.58508627608120
+  Exchange-correlation energy:                               -104.03949028308460
+
+  Total energy:                                              -518.44550941997977
+
+  outer SCF iter =    7 RMS gradient =   0.60E-05 energy =       -518.4455094200
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.20000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.7     0.00000598      -518.4455470083 -3.76E-05
+     2 OT DIIS     0.15E+00    0.3     0.00000595      -518.4455471224 -1.14E-07
+     3 OT DIIS     0.15E+00    0.3     0.00000583      -518.4455504844 -3.36E-06
+     4 OT DIIS     0.15E+00    0.3     0.00000574      -518.4455549675 -4.48E-06
+     5 OT DIIS     0.15E+00    0.3     0.00000565      -518.4455601765 -5.21E-06
+     6 OT DIIS     0.15E+00    0.3     0.00000541      -518.4455779341 -1.78E-05
+     7 OT DIIS     0.15E+00    0.3     0.00000520      -518.4455935661 -1.56E-05
+     8 OT DIIS     0.15E+00    0.3     0.00000498      -518.4456127411 -1.92E-05
+     9 OT DIIS     0.15E+00    0.3     0.00000490      -518.4456203407 -7.60E-06
+    10 OT DIIS     0.15E+00    0.3     0.00000483      -518.4456283925 -8.05E-06
+    11 OT DIIS     0.15E+00    0.3     0.00000477      -518.4456351682 -6.78E-06
+    12 OT DIIS     0.15E+00    0.3     0.00000471      -518.4456415072 -6.34E-06
+    13 OT DIIS     0.15E+00    0.3     0.00000466      -518.4456485387 -7.03E-06
+    14 OT DIIS     0.15E+00    0.3     0.00000458      -518.4456583406 -9.80E-06
+    15 OT DIIS     0.15E+00    0.3     0.00000451      -518.4456680931 -9.75E-06
+    16 OT DIIS     0.15E+00    0.3     0.00000444      -518.4456791075 -1.10E-05
+    17 OT DIIS     0.15E+00    0.3     0.00000436      -518.4456920960 -1.30E-05
+    18 OT DIIS     0.15E+00    0.3     0.00000430      -518.4457052146 -1.31E-05
+    19 OT DIIS     0.15E+00    0.3     0.00000424      -518.4457192461 -1.40E-05
+    20 OT DIIS     0.15E+00    0.3     0.00000418      -518.4457336034 -1.44E-05
+    21 OT DIIS     0.15E+00    0.3     0.00000412      -518.4457474264 -1.38E-05
+    22 OT DIIS     0.15E+00    0.3     0.00000406      -518.4457627091 -1.53E-05
+    23 OT DIIS     0.15E+00    0.3     0.00000399      -518.4457795999 -1.69E-05
+    24 OT DIIS     0.15E+00    0.3     0.00000393      -518.4457943753 -1.48E-05
+    25 OT DIIS     0.15E+00    0.3     0.00000386      -518.4458125633 -1.82E-05
+    26 OT DIIS     0.15E+00    0.3     0.00000380      -518.4458271744 -1.46E-05
+    27 OT DIIS     0.15E+00    0.3     0.00000374      -518.4458411316 -1.40E-05
+    28 OT DIIS     0.15E+00    0.3     0.00000368      -518.4458548201 -1.37E-05
+    29 OT DIIS     0.15E+00    0.3     0.00000363      -518.4458684836 -1.37E-05
+    30 OT DIIS     0.15E+00    0.3     0.00000359      -518.4458791198 -1.06E-05
+    31 OT DIIS     0.15E+00    0.3     0.00000354      -518.4458916330 -1.25E-05
+    32 OT DIIS     0.15E+00    0.3     0.00000350      -518.4459022949 -1.07E-05
+    33 OT DIIS     0.15E+00    0.3     0.00000345      -518.4459150493 -1.28E-05
+    34 OT DIIS     0.15E+00    0.3     0.00000340      -518.4459267039 -1.17E-05
+    35 OT DIIS     0.15E+00    0.3     0.00000336      -518.4459375427 -1.08E-05
+    36 OT DIIS     0.15E+00    0.3     0.00000331      -518.4459490699 -1.15E-05
+    37 OT DIIS     0.15E+00    0.3     0.00000326      -518.4459604806 -1.14E-05
+    38 OT DIIS     0.15E+00    0.3     0.00000322      -518.4459701640 -9.68E-06
+    39 OT DIIS     0.15E+00    0.3     0.00000317      -518.4459803703 -1.02E-05
+    40 OT DIIS     0.15E+00    0.3     0.00000313      -518.4459890351 -8.66E-06
+    41 OT DIIS     0.15E+00    0.3     0.00000309      -518.4459976363 -8.60E-06
+    42 OT DIIS     0.15E+00    0.3     0.00000304      -518.4460055515 -7.92E-06
+    43 OT DIIS     0.15E+00    0.3     0.00000300      -518.4460126418 -7.09E-06
+    44 OT DIIS     0.15E+00    0.3     0.00000296      -518.4460194755 -6.83E-06
+    45 OT DIIS     0.15E+00    0.3     0.00000293      -518.4460259637 -6.49E-06
+    46 OT DIIS     0.15E+00    0.3     0.00000289      -518.4460318564 -5.89E-06
+    47 OT DIIS     0.15E+00    0.3     0.00000286      -518.4460377913 -5.93E-06
+    48 OT DIIS     0.15E+00    0.4     0.00000283      -518.4460432998 -5.51E-06
+    49 OT DIIS     0.15E+00    0.3     0.00000279      -518.4460488891 -5.59E-06
+    50 OT DIIS     0.15E+00    0.3     0.00000276      -518.4460537879 -4.90E-06
+
+  Leaving inner SCF loop after reaching    50 steps.
+
+
+  Electronic density on regular grids:       -190.9999999925        0.0000000075
+  Core density on regular grids:              193.9999999906       -0.0000000094
+  Total charge density on r-space grids:        2.9999999981
+  Total charge density g-space grids:           2.9999999981
+
+  Overlap energy of the core charge distribution:               0.00000576685054
+  Self energy of the core charge distribution:              -1180.77596130715415
+  Core Hamiltonian energy:                                    346.79800966631694
+  Hartree energy:                                             419.57274886432845
+  Exchange-correlation energy:                               -104.04085677823961
+
+  Total energy:                                              -518.44605378789777
+
+  outer SCF iter =    8 RMS gradient =   0.28E-05 energy =       -518.4460537879
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.20000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.7     0.00000274      -518.4460585272 -4.74E-06
+     2 OT DIIS     0.15E+00    0.3     0.00000273      -518.4460586415 -1.14E-07
+     3 OT DIIS     0.15E+00    0.3     0.00000270      -518.4460593801 -7.39E-07
+     4 OT DIIS     0.15E+00    0.3     0.00000268      -518.4460604838 -1.10E-06
+     5 OT DIIS     0.15E+00    0.3     0.00000263      -518.4460624219 -1.94E-06
+     6 OT DIIS     0.15E+00    0.3     0.00000242      -518.4460730687 -1.06E-05
+     7 OT DIIS     0.15E+00    0.3     0.00000231      -518.4460793208 -6.25E-06
+     8 OT DIIS     0.15E+00    0.3     0.00000223      -518.4460840066 -4.69E-06
+     9 OT DIIS     0.15E+00    0.3     0.00000220      -518.4460854275 -1.42E-06
+    10 OT DIIS     0.15E+00    0.3     0.00000216      -518.4460874077 -1.98E-06
+    11 OT DIIS     0.15E+00    0.3     0.00000212      -518.4460900862 -2.68E-06
+    12 OT DIIS     0.15E+00    0.3     0.00000208      -518.4460922401 -2.15E-06
+    13 OT DIIS     0.15E+00    0.3     0.00000203      -518.4460947102 -2.47E-06
+    14 OT DIIS     0.15E+00    0.3     0.00000199      -518.4460966826 -1.97E-06
+    15 OT DIIS     0.15E+00    0.3     0.00000196      -518.4460979999 -1.32E-06
+    16 OT DIIS     0.15E+00    0.3     0.00000193      -518.4460995342 -1.53E-06
+    17 OT DIIS     0.15E+00    0.3     0.00000191      -518.4461010048 -1.47E-06
+    18 OT DIIS     0.15E+00    0.3     0.00000189      -518.4461033028 -2.30E-06
+    19 OT DIIS     0.15E+00    0.3     0.00000186      -518.4461063165 -3.01E-06
+    20 OT DIIS     0.15E+00    0.3     0.00000181      -518.4461113455 -5.03E-06
+    21 OT DIIS     0.15E+00    0.3     0.00000176      -518.4461161023 -4.76E-06
+    22 OT DIIS     0.15E+00    0.3     0.00000174      -518.4461186869 -2.58E-06
+    23 OT DIIS     0.15E+00    0.3     0.00000172      -518.4461208627 -2.18E-06
+    24 OT DIIS     0.15E+00    0.3     0.00000170      -518.4461228348 -1.97E-06
+    25 OT DIIS     0.15E+00    0.3     0.00000168      -518.4461248294 -1.99E-06
+    26 OT DIIS     0.15E+00    0.3     0.00000165      -518.4461270702 -2.24E-06
+    27 OT DIIS     0.15E+00    0.3     0.00000162      -518.4461294068 -2.34E-06
+    28 OT DIIS     0.15E+00    0.3     0.00000158      -518.4461323492 -2.94E-06
+    29 OT DIIS     0.15E+00    0.3     0.00000156      -518.4461345737 -2.22E-06
+    30 OT DIIS     0.15E+00    0.3     0.00000155      -518.4461359044 -1.33E-06
+    31 OT DIIS     0.15E+00    0.3     0.00000154      -518.4461372346 -1.33E-06
+    32 OT DIIS     0.15E+00    0.3     0.00000153      -518.4461385771 -1.34E-06
+    33 OT DIIS     0.15E+00    0.3     0.00000151      -518.4461402816 -1.70E-06
+    34 OT DIIS     0.15E+00    0.3     0.00000149      -518.4461425515 -2.27E-06
+    35 OT DIIS     0.15E+00    0.3     0.00000147      -518.4461449592 -2.41E-06
+    36 OT DIIS     0.15E+00    0.3     0.00000144      -518.4461479935 -3.03E-06
+    37 OT DIIS     0.15E+00    0.3     0.00000141      -518.4461506586 -2.67E-06
+    38 OT DIIS     0.15E+00    0.3     0.00000139      -518.4461525596 -1.90E-06
+    39 OT DIIS     0.15E+00    0.3     0.00000137      -518.4461542718 -1.71E-06
+    40 OT DIIS     0.15E+00    0.3     0.00000134      -518.4461559635 -1.69E-06
+    41 OT DIIS     0.15E+00    0.3     0.00000131      -518.4461576413 -1.68E-06
+    42 OT DIIS     0.15E+00    0.3     0.00000128      -518.4461593787 -1.74E-06
+    43 OT DIIS     0.15E+00    0.3     0.00000126      -518.4461608232 -1.44E-06
+    44 OT DIIS     0.15E+00    0.3     0.00000123      -518.4461623069 -1.48E-06
+    45 OT DIIS     0.15E+00    0.3     0.00000121      -518.4461633292 -1.02E-06
+    46 OT DIIS     0.15E+00    0.3     0.00000119      -518.4461640509 -7.22E-07
+    47 OT DIIS     0.15E+00    0.3     0.00000118      -518.4461646865 -6.36E-07
+    48 OT DIIS     0.15E+00    0.3     0.00000116      -518.4461653171 -6.31E-07
+    49 OT DIIS     0.15E+00    0.3     0.00000114      -518.4461659125 -5.95E-07
+    50 OT DIIS     0.15E+00    0.3     0.00000112      -518.4461665329 -6.20E-07
+
+  Leaving inner SCF loop after reaching    50 steps.
+
+
+  Electronic density on regular grids:       -190.9999999926        0.0000000074
+  Core density on regular grids:              193.9999999906       -0.0000000094
+  Total charge density on r-space grids:        2.9999999980
+  Total charge density g-space grids:           2.9999999980
+
+  Overlap energy of the core charge distribution:               0.00000576685054
+  Self energy of the core charge distribution:              -1180.77596130715415
+  Core Hamiltonian energy:                                    346.79678382721988
+  Hartree energy:                                             419.57384013258752
+  Exchange-correlation energy:                               -104.04083495239830
+
+  Total energy:                                              -518.44616653289449
+
+  outer SCF iter =    9 RMS gradient =   0.11E-05 energy =       -518.4461665329
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.20000000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.7     0.00000110      -518.4461670182 -4.85E-07
+     2 OT DIIS     0.15E+00    0.3     0.00000110      -518.4461670366 -1.84E-08
+     3 OT DIIS     0.15E+00    0.3     0.00000108      -518.4461671454 -1.09E-07
+     4 OT DIIS     0.15E+00    0.3     0.00000107      -518.4461672851 -1.40E-07
+     5 OT DIIS     0.15E+00    0.3     0.00000105      -518.4461675333 -2.48E-07
+     6 OT DIIS     0.15E+00    0.3     0.00000097      -518.4461687002 -1.17E-06
+     7 OT DIIS     0.15E+00    0.3     0.00000091      -518.4461696014 -9.01E-07
+     8 OT DIIS     0.15E+00    0.3     0.00000083      -518.4461707261 -1.12E-06
+     9 OT DIIS     0.15E+00    0.3     0.00000082      -518.4461709089 -1.83E-07
+    10 OT DIIS     0.15E+00    0.3     0.00000079      -518.4461712301 -3.21E-07
+    11 OT DIIS     0.15E+00    0.3     0.00000077      -518.4461714840 -2.54E-07
+    12 OT DIIS     0.15E+00    0.3     0.00000074      -518.4461718258 -3.42E-07
+    13 OT DIIS     0.15E+00    0.3     0.00000072      -518.4461721251 -2.99E-07
+    14 OT DIIS     0.15E+00    0.3     0.00000070      -518.4461723447 -2.20E-07
+    15 OT DIIS     0.15E+00    0.3     0.00000068      -518.4461725215 -1.77E-07
+    16 OT DIIS     0.15E+00    0.3     0.00000066      -518.4461726893 -1.68E-07
+    17 OT DIIS     0.15E+00    0.3     0.00000065      -518.4461728755 -1.86E-07
+    18 OT DIIS     0.15E+00    0.3     0.00000064      -518.4461731180 -2.43E-07
+    19 OT DIIS     0.15E+00    0.3     0.00000063      -518.4461734103 -2.92E-07
+    20 OT DIIS     0.15E+00    0.3     0.00000061      -518.4461738559 -4.46E-07
+    21 OT DIIS     0.15E+00    0.3     0.00000059      -518.4461742888 -4.33E-07
+    22 OT DIIS     0.15E+00    0.3     0.00000058      -518.4461745382 -2.49E-07
+    23 OT DIIS     0.15E+00    0.3     0.00000057      -518.4461747545 -2.16E-07
+    24 OT DIIS     0.15E+00    0.3     0.00000056      -518.4461749263 -1.72E-07
+    25 OT DIIS     0.15E+00    0.3     0.00000055      -518.4461751042 -1.78E-07
+    26 OT DIIS     0.15E+00    0.3     0.00000053      -518.4461753373 -2.33E-07
+    27 OT DIIS     0.15E+00    0.3     0.00000052      -518.4461755289 -1.92E-07
+    28 OT DIIS     0.15E+00    0.3     0.00000051      -518.4461757049 -1.76E-07
+    29 OT DIIS     0.15E+00    0.3     0.00000050      -518.4461758907 -1.86E-07
+
+  *** SCF run converged in    29 steps ***
+
+
+  Electronic density on regular grids:       -190.9999999926        0.0000000074
+  Core density on regular grids:              193.9999999906       -0.0000000094
+  Total charge density on r-space grids:        2.9999999980
+  Total charge density g-space grids:           2.9999999980
+
+  Overlap energy of the core charge distribution:               0.00000576685054
+  Self energy of the core charge distribution:              -1180.77596130715415
+  Core Hamiltonian energy:                                    346.79899744006173
+  Hartree energy:                                             419.57183439757603
+  Exchange-correlation energy:                               -104.04105218807028
+
+  Total energy:                                              -518.44617589073607
+
+  outer SCF iter =   10 RMS gradient =   0.50E-06 energy =       -518.4461758907
+  outer SCF loop converged in  10 iterations or  479 steps
+
+
+  Integrated absolute spin density  :                               9.9092076930
+  Ideal and single determinant S**2 :                    0.750000       4.997091
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):             -518.446176010107138
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                DBCSR STATISTICS                             -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ COUNTER                                    TOTAL       BLAS       SMM       ACC
+ flops   42 x   31 x   31                  807240       0.0%    100.0%      0.0%
+ flops    5 x   31 x   31                 1922000       0.0%    100.0%      0.0%
+ flops   42 x   32 x   32                 4300800       0.0%    100.0%      0.0%
+ flops   13 x   31 x   31                 7495800       0.0%    100.0%      0.0%
+ flops    5 x   32 x   32                10240000       0.0%    100.0%      0.0%
+ flops   13 x   32 x   32                39936000       0.0%    100.0%      0.0%
+ flops   42 x   42 x   31                52606008       0.0%    100.0%      0.0%
+ flops   44 x   31 x   44                58695648       0.0%    100.0%      0.0%
+ flops   42 x    5 x   31                62626200       0.0%    100.0%      0.0%
+ flops    5 x   42 x   31                62626200       0.0%    100.0%      0.0%
+ flops   44 x   31 x   47                62697624       0.0%    100.0%      0.0%
+ flops   47 x   31 x   44                62697624       0.0%    100.0%      0.0%
+ flops   47 x   31 x   47                66972462       0.0%    100.0%      0.0%
+ flops   42 x   31 x   42               107399376       0.0%    100.0%      0.0%
+ flops    5 x    5 x   31               131962350       0.0%    100.0%      0.0%
+ flops   31 x   31 x   44               161186608       0.0%    100.0%      0.0%
+ flops   31 x   31 x   47               172176604       0.0%    100.0%      0.0%
+ flops   44 x   31 x   31               200849000       0.0%    100.0%      0.0%
+ flops   47 x   31 x   31               214543250       0.0%    100.0%      0.0%
+ flops   31 x   31 x   31               241366682       0.0%    100.0%      0.0%
+ flops   13 x   42 x   31               244242180       0.0%    100.0%      0.0%
+ flops   42 x   13 x   31               244242180       0.0%    100.0%      0.0%
+ flops    5 x   31 x   42               255712800       0.0%    100.0%      0.0%
+ flops   42 x   31 x    5               255712800       0.0%    100.0%      0.0%
+ flops   42 x   42 x   32               271514880       0.0%    100.0%      0.0%
+ flops   44 x   32 x   44               302945280       0.0%    100.0%      0.0%
+ flops   42 x    5 x   32               323232000       0.0%    100.0%      0.0%
+ flops    5 x   42 x   32               323232000       0.0%    100.0%      0.0%
+ flops   47 x   32 x   44               323600640       0.0%    100.0%      0.0%
+ flops   44 x   32 x   47               323600640       0.0%    100.0%      0.0%
+ flops   31 x   32 x   44               332772352       0.0%    100.0%      0.0%
+ flops   32 x   31 x   44               332772352       0.0%    100.0%      0.0%
+ flops   47 x   32 x   47               345664320       0.0%    100.0%      0.0%
+ flops   31 x   32 x   47               355461376       0.0%    100.0%      0.0%
+ flops   32 x   31 x   47               355461376       0.0%    100.0%      0.0%
+ flops   44 x   31 x   32               414656000       0.0%    100.0%      0.0%
+ flops   44 x   32 x   31               414656000       0.0%    100.0%      0.0%
+ flops   47 x   32 x   31               442928000       0.0%    100.0%      0.0%
+ flops   47 x   31 x   32               442928000       0.0%    100.0%      0.0%
+ flops   31 x   31 x   32               498305408       0.0%    100.0%      0.0%
+ flops   31 x   32 x   31               498305408       0.0%    100.0%      0.0%
+ flops   32 x   31 x   31               498305408       0.0%    100.0%      0.0%
+ flops    5 x   31 x    5               508381400       0.0%    100.0%      0.0%
+ flops    5 x   13 x   31               536945110       0.0%    100.0%      0.0%
+ flops   13 x    5 x   31               536945110       0.0%    100.0%      0.0%
+ flops   42 x   32 x   42               553980672       0.0%    100.0%      0.0%
+ flops   49 x   31 x   44               588290472       0.0%    100.0%      0.0%
+ flops   44 x   31 x   49               588290472       0.0%    100.0%      0.0%
+ flops   49 x   31 x   47               628401186       0.0%    100.0%      0.0%
+ flops   47 x   31 x   49               628401186       0.0%    100.0%      0.0%
+ flops    5 x    5 x   32               681096000       0.0%    100.0%      0.0%
+ flops   13 x   31 x   42               997279920       0.0%    100.0%      0.0%
+ flops   42 x   31 x   13               997279920       0.0%    100.0%      0.0%
+ flops   32 x   32 x   31              1028759552       0.0%    100.0%      0.0%
+ flops   31 x   32 x   32              1028759552       0.0%    100.0%      0.0%
+ flops   32 x   31 x   32              1028759552       0.0%    100.0%      0.0%
+ flops   13 x   42 x   32              1260604800       0.0%    100.0%      0.0%
+ flops   42 x   13 x   32              1260604800       0.0%    100.0%      0.0%
+ flops   42 x   32 x    5              1319001600       0.0%    100.0%      0.0%
+ flops    5 x   32 x   42              1319001600       0.0%    100.0%      0.0%
+ flops   31 x   31 x   49              1615529412       0.0%    100.0%      0.0%
+ flops   49 x   31 x   31              2013054750       0.0%    100.0%      0.0%
+ flops    5 x   31 x   13              2192432840       0.0%    100.0%      0.0%
+ flops   13 x   31 x    5              2192432840       0.0%    100.0%      0.0%
+ flops   32 x   32 x   44              2232795136       0.0%    100.0%      0.0%
+ flops   13 x   13 x   31              2278042936       0.0%    100.0%      0.0%
+ flops   32 x   32 x   47              2385031168       0.0%    100.0%      0.0%
+ flops    5 x   32 x    5              2622300800       0.0%    100.0%      0.0%
+ flops    5 x   13 x   32              2771329600       0.0%    100.0%      0.0%
+ flops   13 x    5 x   32              2771329600       0.0%    100.0%      0.0%
+ flops   44 x   32 x   32              2782208000       0.0%    100.0%      0.0%
+ flops   47 x   32 x   32              2971904000       0.0%    100.0%      0.0%
+ flops   49 x   32 x   44              3036337920       0.0%    100.0%      0.0%
+ flops   44 x   32 x   49              3036337920       0.0%    100.0%      0.0%
+ flops   47 x   32 x   49              3243360960       0.0%    100.0%      0.0%
+ flops   49 x   32 x   47              3243360960       0.0%    100.0%      0.0%
+ flops   31 x   32 x   49              3335286528       0.0%    100.0%      0.0%
+ flops   32 x   31 x   49              3335286528       0.0%    100.0%      0.0%
+ flops   49 x   31 x   32              4155984000       0.0%    100.0%      0.0%
+ flops   49 x   32 x   31              4155984000       0.0%    100.0%      0.0%
+ flops   42 x   32 x   13              5144106240       0.0%    100.0%      0.0%
+ flops   13 x   32 x   42              5144106240       0.0%    100.0%      0.0%
+ flops   49 x   31 x   49              5896274958       0.0%    100.0%      0.0%
+ flops   32 x   32 x   32              8062238720       0.0%    100.0%      0.0%
+ flops   13 x   31 x   13              8992932104       0.0%    100.0%      0.0%
+ flops    5 x   32 x   13             11308868480       0.0%    100.0%      0.0%
+ flops   13 x   32 x    5             11308868480       0.0%    100.0%      0.0%
+ flops   13 x   13 x   32             11757640960       0.0%    100.0%      0.0%
+ flops   32 x   32 x   49             22378696704       0.0%    100.0%      0.0%
+ flops   49 x   32 x   32             27885312000       0.0%    100.0%      0.0%
+ flops   49 x   32 x   49             30432386880       0.0%    100.0%      0.0%
+ flops   13 x   32 x   13             46386773888       0.0%    100.0%      0.0%
+ flops total                       276.082677E+09       0.0%    100.0%      0.0%
+ flops max/rank                     12.042232E+09       0.0%    100.0%      0.0%
+ matmuls inhomo. stacks                         0       0.0%      0.0%      0.0%
+ matmuls total                           19200738       0.0%    100.0%      0.0%
+ number of processed stacks               5506527       0.0%    100.0%      0.0%
+ average stack size                                     0.0       3.5       0.0
+ marketing flops                   307.342049E+09
+ -------------------------------------------------------------------------------
+ # multiplications                          19912
+ max memory usage/rank             105.824256E+06
+ # max total images/rank                        1
+ # MPI messages exchanged                48187040
+ # MPI messages filtered                        0
+ MPI messages size (elements):
+  total size                        18.639983E+09
+  min size                           0.000000E+00
+  max size                           2.401000E+03
+  average size                     386.825653E+00
+ MPI breakdown and total messages size (bytes):
+             size <=      128            37171600                        0
+       128 < size <=     8192             1761360              14268922160
+      8192 < size <=    32768             9254080             134850476800
+     32768 < size <=   131072                   0                        0
+    131072 < size <=  4194304                   0                        0
+   4194304 < size <= 16777216                   0                        0
+  16777216 < size                               0                        0
+ -------------------------------------------------------------------------------
+
+ MEMORY| Estimated peak process memory [MiB]                                 101
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                         MESSAGE PASSING PERFORMANCE                         -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+
+ ROUTINE             CALLS  TOT TIME [s]  AVE VOLUME [Bytes]  PERFORMANCE [MB/s]
+ MP_Group                4         0.000
+ MP_Bcast            13402         1.427             156494.             1470.11
+ MP_Allreduce        81957        42.856                 59.                0.11
+ MP_Sync               392         0.006
+ MP_Alltoall         79898        88.039             205998.              186.95
+ MP_ISendRecv       230400         2.129              10800.             1168.86
+ MP_Wait           2428028        62.813
+ MP_comm_split         389         0.773
+ MP_ISend           972094         2.235              16853.             7330.86
+ MP_IRecv           972094         0.225              16612.            71877.44
+ MP_Recv               480         0.032              38304.              573.18
+ MP_Memory          788388         0.153
+ -------------------------------------------------------------------------------
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                           R E F E R E N C E S                               -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ 
+ CP2K version 4.1, the CP2K developers group (2016).
+ CP2K is freely available from https://www.cp2k.org/ .
+
+ Schuett, Ole; Messmer, Peter; Hutter, Juerg; VandeVondele, Joost. 
+ Electronic Structure Calculations on Graphics Processing Units, John Wiley & Sons, Ltd, 173-190 (2016). 
+ GPU-Accelerated Sparse Matrix-Matrix Multiplication for Linear Scaling Density Functional Theory.
+ http://dx.doi.org/10.1002/9781118670712.ch8
+
+
+ Borstnik, U; VandeVondele, J; Weber, V; Hutter, J. 
+ PARALLEL COMPUTING, 40 (5-6), 47-58 (2014). 
+ Sparse matrix multiplication: The distributed block-compressed sparse
+ row library.
+ http://dx.doi.org/10.1016/j.parco.2014.03.012
+
+
+ Hutter, J; Iannuzzi, M; Schiffmann, F; VandeVondele, J. 
+ WILEY INTERDISCIPLINARY REVIEWS-COMPUTATIONAL MOLECULAR SCIENCE, 4 (1), 15-25 (2014). 
+ CP2K: atomistic simulations of condensed matter systems.
+ http://dx.doi.org/10.1002/wcms.1159
+
+
+ VandeVondele, J; Hutter, J. 
+ JOURNAL OF CHEMICAL PHYSICS, 127 (11), 114105 (2007). 
+ Gaussian basis sets for accurate calculations on molecular systems in
+ gas and condensed phases.
+ http://dx.doi.org/10.1063/1.2770708
+
+
+ Krack, M. 
+ THEORETICAL CHEMISTRY ACCOUNTS, 114 (1-3), 145-152 (2005). 
+ Pseudopotentials for H to Kr optimized for gradient-corrected
+ exchange-correlation functionals.
+ http://dx.doi.org/10.1007/s00214-005-0655-y
+
+
+ VandeVondele, J; Krack, M; Mohamed, F; Parrinello, M; Chassaing, T;
+ Hutter, J. COMPUTER PHYSICS COMMUNICATIONS, 167 (2), 103-128 (2005). 
+ QUICKSTEP: Fast and accurate density functional calculations using a
+ mixed Gaussian and plane waves approach.
+ http://dx.doi.org/10.1016/j.cpc.2004.12.014
+
+
+ Frigo, M; Johnson, SG. 
+ PROCEEDINGS OF THE IEEE, 93 (2), 216-231 (2005). 
+ The design and implementation of FFTW3.
+ http://dx.doi.org/10.1109/JPROC.2004.840301
+
+
+ VandeVondele, J; Hutter, J. 
+ JOURNAL OF CHEMICAL PHYSICS, 118 (10), 4365-4369 (2003). 
+ An efficient orbital transformation method for electronic structure
+ calculations.
+ http://dx.doi.org/10.1063/1.1543154
+
+
+ Hartwigsen, C; Goedecker, S; Hutter, J. 
+ PHYSICAL REVIEW B, 58 (7), 3641-3662 (1998). 
+ Relativistic separable dual-space Gaussian pseudopotentials from H to Rn.
+ http://dx.doi.org/10.1103/PhysRevB.58.3641
+
+
+ Lippert, G; Hutter, J; Parrinello, M. 
+ MOLECULAR PHYSICS, 92 (3), 477-487 (1997). 
+ A hybrid Gaussian and plane wave density functional scheme.
+ http://dx.doi.org/10.1080/002689797170220
+
+
+ Perdew, JP; Burke, K; Ernzerhof, M. 
+ PHYSICAL REVIEW LETTERS, 77 (18), 3865-3868 (1996). 
+ Generalized gradient approximation made simple.
+ http://dx.doi.org/10.1103/PhysRevLett.77.3865
+
+
+ Goedecker, S; Teter, M; Hutter, J. 
+ PHYSICAL REVIEW B, 54 (3), 1703-1710 (1996). 
+ Separable dual-space Gaussian pseudopotentials.
+ http://dx.doi.org/10.1103/PhysRevB.54.1703
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                T I M I N G                                  -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
+                                MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
+ CP2K                                 1  1.0    0.159    0.276  314.992  314.997
+ qs_forces                            1  2.0    0.001    0.002  312.624  312.625
+ qs_energies                          1  3.0    0.000    0.000  312.313  312.314
+ scf_env_do_scf                       1  4.0    0.001    0.001  312.011  312.011
+ scf_env_do_scf_inner_loop          479  5.0    0.020    0.048  307.760  307.783
+ qs_scf_new_mos                     479  6.0    0.002    0.004  140.587  140.661
+ qs_scf_loop_do_ot                  479  7.0    0.001    0.002  140.585  140.659
+ ot_scf_mini                        479  8.0    0.016    0.017  133.945  134.012
+ dbcsr_multiply_generic           19912 11.1    0.258    0.269  122.410  126.117
+ qs_ks_update_qs_env                489  6.0    0.010    0.015  112.664  113.064
+ rebuild_ks_matrix                  480  7.0    0.002    0.003  111.746  112.143
+ qs_ks_build_kohn_sham_matrix       480  8.0    0.075    0.093  111.744  112.140
+ ot_mini                            479  9.0    0.002    0.003   87.995   88.193
+ rs_pw_transfer                    5762 10.5    0.090    0.120   73.341   76.253
+ qs_ot_get_derivative               958 10.0    0.007    0.008   74.136   74.648
+ sum_up_and_integrate               480  9.0    0.194    0.320   61.962   62.422
+ integrate_v_rspace                 960 10.0    4.244   12.892   61.766   62.298
+ qs_rho_update_rho                  480  6.0    0.007    0.012   56.810   57.055
+ calculate_rho_elec                 960  7.0    4.727   10.524   56.803   57.049
+ pw_transfer                      14881 10.7    0.812    1.072   51.681   55.201
+ fft_wrap_pw1pw2                  13921 11.8    0.084    0.110   50.675   54.199
+ potential_pw2rs                    960 11.0    0.026    0.039   48.709   52.476
+ multiply_cannon                  19912 12.1    1.736    1.847   37.484   52.280
+ fft3d_ps                         13921 13.8    8.835   12.836   45.242   49.062
+ make_m2s                         39824 12.1    0.295    0.309   37.932   46.647
+ fft_wrap_pw1pw2_250              10081 12.9    1.503    2.104   43.230   46.362
+ density_rs2pw                      960  8.0    0.021    0.028   44.060   46.293
+ make_images                      39824 13.1    3.895    4.077   36.786   45.509
+ mp_waitany                       96046 12.5   35.404   44.879   35.404   44.879
+ qs_vxc_create                      480  9.0    0.012    0.015   41.673   41.883
+ xc_vxc_pw_create                   480 10.0    0.682    0.895   41.661   41.873
+ mp_waitall_1                   2331982 14.2   28.082   41.378   28.082   41.378
+ make_images_sizes                39824 14.1    0.024    0.026   29.716   38.937
+ mp_alltoall_i44                  39824 15.1   29.692   38.914   29.692   38.914
+ mp_sum_l                         35906 12.3   23.190   37.531   23.190   37.531
+ mp_sum_b                         35878 12.3   22.523   36.504   22.523   36.504
+ qs_ot_get_derivative_diag          378 11.0    0.008    0.009   35.695   35.981
+ mp_alltoall_z22v                 13921 15.8   29.329   35.679   29.329   35.679
+ multiply_cannon_metrocomm3      219032 13.1    0.159    0.169   10.754   29.927
+ qs_ot_get_p                        978  9.0    0.004    0.005   29.235   29.889
+ rs_pw_transfer_PW2RS_250           961 13.0    8.839   10.648   27.755   28.987
+ rs_pw_transfer_RS2PW_250           961 10.0    7.864    9.953   22.127   24.602
+ xc_rho_set_and_dset_create         480 11.0    0.443    0.656   19.510   23.964
+ mp_allgather_i34                 19912 13.1   15.013   23.315   15.013   23.315
+ yz_to_x                           4801 14.8    0.431    0.743   16.965   21.342
+ multiply_cannon_metrocomm1      219032 13.1    0.157    0.173    6.728   19.371
+ qs_ot_get_derivative_taylor        580 11.0    0.012    0.013   18.611   18.838
+ qs_ot_p2m_diag                     389 10.0    0.018    0.178   16.734   17.036
+ x_to_yz                           5280 15.0    0.550    0.953   12.702   14.557
+ mp_alltoall_d11v                 11115 13.2   10.073   14.095   10.073   14.095
+ rs_distribute_matrix              1922  9.5    0.114    0.172    9.914   13.496
+ qs_ot_get_orbitals                 958  9.0    0.004    0.004   12.731   13.331
+ mp_sum_d                         23338 11.7   11.498   13.093   11.498   13.093
+ ot_diis_step                       479 10.0    0.016    0.020   12.900   12.902
+ make_images_data                 39824 14.1    0.190    0.213    2.325   12.699
+ xc_functional_eval                 480 12.0    0.006    0.013    6.795   11.186
+ pbe_lsd_eval                       480 13.0    6.789   11.183    6.789   11.183
+ hybrid_alltoall_any              40360 15.1    0.148    0.173    1.329   11.172
+ rs_grid_zero                      4802 10.4    9.837   10.806    9.837   10.806
+ cp_dbcsr_syevd                     389 11.0    0.040    0.044   10.054   10.510
+ dbcsr_trace_a_b_d                12040 10.6    0.037    0.055    8.348    9.034
+ rs_pw_transfer_PW2RS_90            960 13.0    1.356    1.899    7.284    8.995
+ cp_fm_syevd                        389 12.0    6.714    7.131    7.630    7.943
+ apply_preconditioner_dbcsr         978 11.0    0.001    0.001    6.785    7.677
+ apply_single                       978 12.0    0.002    0.002    6.784    7.676
+ calculate_dm_sparse                960  8.0    0.003    0.003    6.648    6.682
+ rs_pw_transfer_PW2RS_30            960 13.0    0.958    1.307    5.555    6.364
+ -------------------------------------------------------------------------------
+
+ The number of warnings for this run is : 1
+ 
+ -------------------------------------------------------------------------------
+  **** **** ******  **  PROGRAM ENDED AT                 2023-02-19 01:15:44.844
+ ***** ** ***  *** **   PROGRAM RAN ON            node163.pri.kelvin2.alces.netw
+ **    ****   ******    PROGRAM RAN BY                                  40265864
+ ***** **    ** ** **   PROGRAM PROCESS ID                                117866
+  **** **  *******  **  PROGRAM STOPPED IN /mnt/scratch2/users/40265864/MSc_ML_M
+                                           M/ln_replacements/xyz/Dy_L18_L20_L20_
+                                           MeO_O/prelim_energy/run-2

@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks 20
+#SBATCH --time 00:30:00
+#SBATCH --job-name sf_eval
+#SBATCH --partition=k2-sandbox
+#SBATCH --mem-per-cpu=4G
+
+module purge && module load compilers/gcc/9.3.0 libs/eigen/3.3.7/gcc-4.8.5 mpi/openmpi/4.1.1/gcc-9.3.0 
+rm evaluated_sf.csv
+./sfeval

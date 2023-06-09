@@ -1,0 +1,2 @@
+run-restart.sh: line 14: syntax error near unexpected token `;'
+run-restart.sh: line 14: `	else ; then'
